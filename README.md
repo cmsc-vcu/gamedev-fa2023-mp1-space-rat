@@ -1,6 +1,8 @@
 # gamedev-fa2023-mp1
 CMSC391/COAR463 Game Development - Minor Project 1
 
+This branch is for checking out branching with visual studio. Not meant to merge into main!!!
+
 Great job on creating your own copy of the minor project 1 scaffold!
 
 Be sure to review the resources on the Canvas site Week 6:
