@@ -16,6 +16,7 @@ public class SpawnObstacle : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(obstacles[0].name);
     }
 
     // Update is called once per frame
@@ -27,7 +28,18 @@ public class SpawnObstacle : MonoBehaviour
         
         if (Time.time > nextInterval)
         {
-            Vector3 position = new Vector3(player.transform.position.x + 2*viewport + random.Next(0, 2), (float)0.55 + random.Next(0, 4), 1);
+            float ypos = 0;
+
+            if (obstacles[obstacleIndex].name == "Fire" || obstacles[obstacleIndex].name == "Asteroid")
+            {
+                ypos = 1 + +random.Next(0, 4);
+            }
+            else if (obstacles[obstacleIndex].name == "Plant")
+            {
+                ypos = (float) 0.55;
+            }
+
+            Vector3 position = new Vector3(player.transform.position.x + 2*viewport + random.Next(0, 2), ypos, 1);
             Quaternion rotation = new Quaternion(0, 0, 0, 0);
             GameObject clone = Instantiate(obstacles[obstacleIndex], position, rotation);
             queue.Enqueue(clone);
