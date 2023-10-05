@@ -12,22 +12,24 @@ public class SpawnObstacle : MonoBehaviour
     public Camera cam;
     Queue<GameObject> queue = new Queue<GameObject>(); //keeps track of clones
     Random random = new Random();
+    public GameObject[] obstacles;
 
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
+        int obstacleIndex = random.Next(0, obstacles.Length);
+        
         float viewport = cam.orthographicSize * cam.aspect;
         
         if (Time.time > nextInterval)
         {
             Vector3 position = new Vector3(player.transform.position.x + 2*viewport + random.Next(0, 2), (float)0.55 + random.Next(0, 4), 1);
             Quaternion rotation = new Quaternion(0, 0, 0, 0);
-            GameObject clone = Instantiate(prefab, position, rotation);
+            GameObject clone = Instantiate(obstacles[obstacleIndex], position, rotation);
             queue.Enqueue(clone);
             nextInterval = Time.time + interval;
         }

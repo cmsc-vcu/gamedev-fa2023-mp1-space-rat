@@ -12,9 +12,9 @@ public class SpawnBackground : MonoBehaviour
     Queue<GameObject> bgObjectsArr = new Queue<GameObject>();
     private float bgsize;
     private Quaternion rotation;
-    private float xoffset = 6.0f;
-    private float ypos = 3.0f;
-    private float zpos = -10.0f;
+    public float xoffset = 6.0f;
+    public float ypos = 3.0f;
+    public float zpos = -10.0f;
 
     void Start()
     {
