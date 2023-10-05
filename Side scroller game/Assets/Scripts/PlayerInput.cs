@@ -39,8 +39,8 @@ public class PlayerInput : MonoBehaviour
     {
         verticalInput = Input.GetAxisRaw("Vertical");
         change = new Vector2(0, verticalInput);
-        Debug.Log(2 * cam.orthographicSize);
-        Debug.Log(rb.position.y);
+        //Debug.Log(2 * cam.orthographicSize);
+        //Debug.Log(rb.position.y);
 
 
 

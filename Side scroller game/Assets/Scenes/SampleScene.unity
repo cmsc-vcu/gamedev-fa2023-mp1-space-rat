@@ -773,11 +773,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3376205573473595100, guid: 34f8532bf407a9c4bb8256d5e85231fc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3376205573473595100, guid: 34f8532bf407a9c4bb8256d5e85231fc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3376205573473595100, guid: 34f8532bf407a9c4bb8256d5e85231fc, type: 3}
       propertyPath: m_LocalScale.z
@@ -823,6 +823,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5528855204583953577, guid: 34f8532bf407a9c4bb8256d5e85231fc, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5919090586499756918, guid: 34f8532bf407a9c4bb8256d5e85231fc, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 5919090586499756918, guid: 34f8532bf407a9c4bb8256d5e85231fc, type: 3}
       propertyPath: coin
       value: 
