@@ -26,7 +26,7 @@ public class SpawnCoin : MonoBehaviour
 
         if (Time.time > nextInterval)
         {
-            Vector3 position = new Vector3(player.transform.position.x + (float)2.7 * viewport + random.Next(0, 2), (float)0.55 + random.Next(0, 4), 1);
+            Vector3 position = new Vector3(player.transform.position.x + (float) 4.0 * viewport + random.Next(0, 2), (float)0.55 + random.Next(0, 4), 1);
             Quaternion rotation = new Quaternion(0, 0, 0, 0);
             GameObject clone = Instantiate(prefab, position, rotation);
             queue.Enqueue(clone);

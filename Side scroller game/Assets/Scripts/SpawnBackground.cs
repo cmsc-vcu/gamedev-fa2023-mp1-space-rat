@@ -25,11 +25,11 @@ public class SpawnBackground : MonoBehaviour
         Renderer bg1Renderer = bg1.GetComponent<Renderer>();
         bgsize = bg1Renderer.bounds.size.x;
 
-        Vector3 bg2Position = new Vector3(bgsize, ypos, zpos);
+        Vector3 bg2Position = new Vector3(bgsize - (float) 0.2, ypos, zpos);
         GameObject bg2 = Instantiate(background, bg2Position, rotation);
         bgObjects.Add(bg2);
 
-        Vector3 bg3Position = new Vector3(bgsize * 2, ypos, zpos);
+        Vector3 bg3Position = new Vector3(bg2.transform.position.x + bgsize - (float) 0.2, ypos, zpos);
         GameObject bg3 = Instantiate(background, bg3Position, rotation);
         bgObjects.Add(bg3);
     }
@@ -43,7 +43,7 @@ public class SpawnBackground : MonoBehaviour
             bgObjects.RemoveAt(0);
             Destroy(temp);
 
-            float xpos = bgObjects[bgObjects.Count - 1].transform.position.x + bgsize;
+            float xpos = bgObjects[bgObjects.Count - 1].transform.position.x + bgsize - (float) 0.2;
             Vector3 newStarPosition = new Vector3(xpos, ypos, zpos);
             GameObject newStar = Instantiate(background, newStarPosition, rotation);
             bgObjects.Add(newStar);
