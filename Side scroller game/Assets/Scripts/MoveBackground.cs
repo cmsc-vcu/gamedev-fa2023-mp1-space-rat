@@ -6,23 +6,21 @@ public class MoveBackground : MonoBehaviour
 {
     private GameObject background;
     public float horizontalMovement = -0.1f;
+    private Rigidbody2D rb;
+    Vector2 change;
+    private float speed = 10f;
 
-    // Start is called before the first frame update
     void Start()
     {
-        background = GetComponent<GameObject>();
+        rb = GetComponent<Rigidbody2D>();
+        change = new Vector2(horizontalMovement, 0);
     }
 
     void FixedUpdate()
     {
-        transform.position = new Vector2(transform.position.x + horizontalMovement, transform.position.y);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-
-        
+        if (rb != null)
+        {
+            rb.MovePosition(rb.position + change * speed * Time.fixedDeltaTime);
+        }        
     }
 }

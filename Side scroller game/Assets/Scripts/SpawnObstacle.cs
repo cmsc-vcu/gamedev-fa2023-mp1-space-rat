@@ -16,10 +16,8 @@ public class SpawnObstacle : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(obstacles[0].name);
     }
 
-    // Update is called once per frame
     void Update()
     {
         int obstacleIndex = random.Next(0, obstacles.Length);

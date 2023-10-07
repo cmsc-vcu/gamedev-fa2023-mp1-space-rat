@@ -14,14 +14,18 @@ public class MoveObstacle : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //gameObject.tag = "Obstacle";
-        animator = GetComponent<Animator>();
-        gameObject.AddComponent<Animation>();
+        gameObject.AddComponent<Animator>();
     }
 
     void Update()
     {
-        animator.Play("Fire Animation");
+        
+        if (gameObject.name == "Fire")
+        {
+            animator.Play("Fire Animation");
+        }
+        
+        
     }
 
     void FixedUpdate()
@@ -31,7 +35,6 @@ public class MoveObstacle : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
         if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
