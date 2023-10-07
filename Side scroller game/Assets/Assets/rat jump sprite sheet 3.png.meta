@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1f91a589cc48c594289f60d08d329b24
+guid: f02d062c3eaad0f43842fc3e95e38a53
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,91 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rat jump sprite sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1668
-        width: 2388
-        height: 1668
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3eebae4fec21abd47b6ba2cb8487933b
-      internalID: -1409952686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rat jump sprite sheet_1
-      rect:
-        serializedVersion: 2
-        x: 2388
-        y: 1668
-        width: 2388
-        height: 1668
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 166ce36b41ecb8a4587acb690ee45f70
-      internalID: 16969024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rat jump sprite sheet_2
-      rect:
-        serializedVersion: 2
-        x: 4776
-        y: 1668
-        width: 2388
-        height: 1668
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e652e2008e657cb449706331f714b897
-      internalID: -1855654091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rat jump sprite sheet_3
-      rect:
-        serializedVersion: 2
-        x: 7164
-        y: 1668
-        width: 2388
-        height: 1668
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5acf9a284f27cdc4c926b3458e8ae83b
-      internalID: 859662273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rat jump sprite sheet_4
+      name: rat jump sprite sheet 3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -221,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffe6b6779abf6104e810c3f3463cc892
-      internalID: -1932439160
+      spriteID: ab12c6c78d1e93a448f58aac4dee5379
+      internalID: 2043660346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rat jump sprite sheet_5
+      name: rat jump sprite sheet 3_1
       rect:
         serializedVersion: 2
         x: 2388
@@ -242,50 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2db8553771a7dea489b32b41eafc33fb
-      internalID: -1112979549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rat jump sprite sheet_6
-      rect:
-        serializedVersion: 2
-        x: 4776
-        y: 0
-        width: 2388
-        height: 1668
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7692d5e63c5525541a5d119e6f021808
-      internalID: 1340229651
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rat jump sprite sheet_7
-      rect:
-        serializedVersion: 2
-        x: 7164
-        y: 0
-        width: 2388
-        height: 1668
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aee082ce89ba97948893d67236f87aed
-      internalID: 486678033
+      spriteID: 17c9f125b45606841aaf77d3c72b00ec
+      internalID: 1498051375
       vertices: []
       indices: 
       edges: []
@@ -301,14 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      rat jump sprite sheet_0: -1409952686
-      rat jump sprite sheet_1: 16969024
-      rat jump sprite sheet_2: -1855654091
-      rat jump sprite sheet_3: 859662273
-      rat jump sprite sheet_4: -1932439160
-      rat jump sprite sheet_5: -1112979549
-      rat jump sprite sheet_6: 1340229651
-      rat jump sprite sheet_7: 486678033
+      rat jump sprite sheet 3_0: 2043660346
+      rat jump sprite sheet 3_1: 1498051375
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

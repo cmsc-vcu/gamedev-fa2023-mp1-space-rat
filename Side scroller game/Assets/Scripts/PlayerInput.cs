@@ -16,12 +16,16 @@ public class PlayerInput : MonoBehaviour
     public Camera cam;
     float screenHeight;
 
+    private Animator animator;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         gameObject.tag = "Player";
         scoreText.text = "score: 0";
+
+        animator = GetComponent<Animator>();
     }
 
     
@@ -35,6 +39,17 @@ public class PlayerInput : MonoBehaviour
     {
         verticalInput = Input.GetAxisRaw("Jump");
         change = new Vector2(0, verticalInput);
+
+        if (verticalInput == 0)
+        {
+            animator.SetBool("isjump", true);
+        }
+        else 
+        {
+            animator.SetBool("isjump", false);
+        }
+       
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)
