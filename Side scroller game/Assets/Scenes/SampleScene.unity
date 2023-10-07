@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 519420035}
   - component: {fileID: 519420034}
   - component: {fileID: 519420037}
+  - component: {fileID: 519420038}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -479,7 +480,8 @@ MonoBehaviour:
   cam: {fileID: 519420031}
   player: {fileID: 244061991}
   background: {fileID: 6588650030146148906, guid: c6a01b1fb5fc5e9488c4177a1ed50617, type: 3}
-  xoffset: 6
+  xStartOffset: -6
+  xRemoveOffset: 6
   ypos: 5
   zpos: -10
 --- !u!114 &519420035
@@ -497,7 +499,8 @@ MonoBehaviour:
   cam: {fileID: 519420031}
   player: {fileID: 244061991}
   background: {fileID: 2647189766003269748, guid: b0ffff6b8a82e924293e48c761459fda, type: 3}
-  xoffset: 6
+  xStartOffset: -6
+  xRemoveOffset: 6
   ypos: 3
   zpos: -10
 --- !u!114 &519420036
@@ -515,7 +518,8 @@ MonoBehaviour:
   cam: {fileID: 519420031}
   player: {fileID: 244061991}
   background: {fileID: 112639638718630999, guid: b2a5c7eae015f0e4d954cb660c05b246, type: 3}
-  xoffset: 6
+  xStartOffset: -6
+  xRemoveOffset: 6
   ypos: 3
   zpos: -10
 --- !u!114 &519420037
@@ -533,9 +537,22 @@ MonoBehaviour:
   cam: {fileID: 519420031}
   player: {fileID: 244061991}
   background: {fileID: 2080554236284978576, guid: 3cd90ec3a78506c4e81bd685083277bd, type: 3}
-  xoffset: 20
+  xStartOffset: 0
+  xRemoveOffset: 14
   ypos: 6.2
   zpos: -10
+--- !u!114 &519420038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bd211ce327cc24a99e034d23f86974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &691003649
 GameObject:
   m_ObjectHideFlags: 0
