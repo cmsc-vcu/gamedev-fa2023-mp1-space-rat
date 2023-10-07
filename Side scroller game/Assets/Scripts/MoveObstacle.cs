@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MoveObstacle : MonoBehaviour
 {
+    private Animator animator;
     private Rigidbody2D rb;
     private float horizontalMovement = -0.3f; //speed of obstacles 
     public float speed = 20.0f;
@@ -14,11 +15,13 @@ public class MoveObstacle : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         //gameObject.tag = "Obstacle";
+        animator = GetComponent<Animator>();
+        gameObject.AddComponent<Animation>();
     }
 
     void Update()
     {
-        
+        animator.Play("Fire Animation");
     }
 
     void FixedUpdate()
