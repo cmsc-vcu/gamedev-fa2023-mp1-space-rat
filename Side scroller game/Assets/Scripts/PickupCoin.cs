@@ -9,7 +9,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class PickupCoin : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private float horizontalMovement = -0.3f;
+    private float horizontalMovement = -0.25f;
     public float speed = 20.0f;
     public Rigidbody2D player;
     public int testVariable = 0;
