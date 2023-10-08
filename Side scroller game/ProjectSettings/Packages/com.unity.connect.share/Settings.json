@@ -12,6 +12,11 @@
                 "value": "{\"m_Value\":true}"
             },
             {
+                "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "createDefaultBuildsFolder",
+                "value": "{\"m_Value\":true}"
+            },
+            {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
                 "value": "{\"m_Value\":\"C:/Users/ijdeb/Documents/classes/Fall 2023/Published Games/Project1-4;C:/Users/ijdeb/Documents/classes/Fall 2023/Published Games/Project1-3;C:/Users/ijdeb/Documents/classes/Fall 2023/Published Games/Project1-2;C:/Users/ijdeb/Documents/classes/Fall 2023/Published Games/Project1;C:/Users/ijdeb/Documents/classes/Fall 2023/Published Games/HW4-2;C:/Users/ijdeb/Documents/classes/Fall 2023/Published Games/HW4-1;C:/Users/ijdeb/Documents/classes/Fall 2023/Published Games/HW3-3;C:/Users/ijdeb/Documents/classes/Fall 2023/Published Games/HW3-2;C:/Users/ijdeb/Documents/classes/Fall 2023/Published Games/HW3;\"}"
