@@ -12,21 +12,31 @@ public class MoveObstacle : MonoBehaviour
     Vector2 change;
     public Rigidbody2D player;
     public AudioSource audioSource;
+    private float interval = 10.0f;
+    private float time;
+    private float speedIncrease = -0.01f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         gameObject.AddComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        time = interval;
     }
 
     void Update()
     {
-        
         if (gameObject.name == "Fire")
         {
             animator.Play("Fire Animation");
         }
         
+        if (Time.time >= time)
+        {
+            horizontalMovement += speedIncrease;
+            time += interval;
+            Debug.Log(horizontalMovement);
+        }
         
     }
 
