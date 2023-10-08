@@ -35,7 +35,6 @@ public class MoveObstacle : MonoBehaviour
         {
             horizontalMovement += speedIncrease;
             time += interval;
-            Debug.Log(horizontalMovement);
         }
         
     }
