@@ -16,6 +16,12 @@ public class ScoreTracker : MonoBehaviour
         score = PlayerInput.scoreNum;
     }
 
+    IEnumerator Wait()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
+        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -23,7 +29,7 @@ public class ScoreTracker : MonoBehaviour
         if (Input.anyKey)
         {
             PlayerInput.scoreNum = 0;
-            SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+            StartCoroutine(Wait());
         }
     }
 }

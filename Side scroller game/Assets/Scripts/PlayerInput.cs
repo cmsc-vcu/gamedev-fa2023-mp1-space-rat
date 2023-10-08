@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEditor.SceneManagement;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class PlayerInput : MonoBehaviour
     public GameObject scoreTracker;
     public Camera cam;
     float screenHeight;
-
+    public AudioSource audioSource;
     private Animator animator;
 
 
@@ -24,8 +25,8 @@ public class PlayerInput : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         gameObject.tag = "Player";
         scoreText.text = "score: 0";
-
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     
@@ -56,6 +57,7 @@ public class PlayerInput : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Coin"))
         {
+            audioSource.Play(0);
             collision.gameObject.SetActive(false);
             collision.gameObject.GetComponent<Renderer>().material.color = Color.clear;
             scoreNum++;
