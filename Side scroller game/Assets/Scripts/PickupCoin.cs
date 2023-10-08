@@ -13,16 +13,24 @@ public class PickupCoin : MonoBehaviour
     public float speed = 20.0f;
     public Rigidbody2D player;
     public int testVariable = 0;
+    private float interval = 10.0f;
+    private float time;
+    private float speedIncrease = -0.01f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         this.gameObject.tag = "Coin";
+        time = interval;
     }
 
     void Update()
     {
-
+        if (Time.time >= time)
+        {
+            horizontalMovement += speedIncrease;
+            time += interval;
+        }
     }
 
     void FixedUpdate()
