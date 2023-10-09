@@ -16,12 +16,14 @@ public class PickupCoin : MonoBehaviour
     private float interval = 10.0f;
     private float time;
     private float speedIncrease = -0.01f;
+    public AudioSource audioSource;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         this.gameObject.tag = "Coin";
         time = interval;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -37,4 +39,13 @@ public class PickupCoin : MonoBehaviour
     {
         transform.position = new Vector2(transform.position.x + horizontalMovement, transform.position.y);
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            audioSource.Play(0);
+        }
+    }
+
 }

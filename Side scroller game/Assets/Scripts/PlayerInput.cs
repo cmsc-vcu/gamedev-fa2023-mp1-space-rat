@@ -12,12 +12,12 @@ public class PlayerInput : MonoBehaviour
     public float speed = 20.0f;
     Vector2 change;
     public TMP_Text scoreText;
-    public static int scoreNum = 0;
     public GameObject scoreTracker;
     public Camera cam;
     float screenHeight;
     public AudioSource audioSource;
     private Animator animator;
+    public static int scoreNum = 0;
 
 
     void Start()
@@ -41,6 +41,11 @@ public class PlayerInput : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Jump");
         change = new Vector2(0, verticalInput);
 
+        if (Input.GetKeyDown("space"))
+        {
+            audioSource.Play(0);
+        }
+
         if (verticalInput == 0)
         {
             animator.SetBool("isjump", true);
@@ -57,7 +62,6 @@ public class PlayerInput : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Coin"))
         {
-            audioSource.Play(0);
             collision.gameObject.SetActive(false);
             collision.gameObject.GetComponent<Renderer>().material.color = Color.clear;
             scoreNum++;
