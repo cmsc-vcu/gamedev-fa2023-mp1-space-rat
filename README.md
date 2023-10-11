@@ -1,7 +1,7 @@
 # Space Rat Game!
 CMSC391/COAR463 Game Development - Minor Project 1
 
-A fun side scroller game in which you play as an atronaut rat and jump over obstacles to grab stars. Built in unity using custom visual assets and programmed in C#. 
+A fun side scroller game in which you play as an atronaut rat and jump over obstacles to grab stars. Built in unity using custom made visual assets and programmed in C#. 
 Play the game online at https://play.unity.com/mg/other/project1-6-1.
 
 Audio sources:
