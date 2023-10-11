@@ -2,7 +2,7 @@
 CMSC391/COAR463 Game Development - Minor Project 1
 
 A fun side scroller game in which you play as an atronaut rat and jump over obstacles to grab stars. Built in unity using custom visual assets and programmed in C#. 
-Clone this repo and open it up in Unity or play the game online at https://play.unity.com/mg/other/project1-6-1.
+Play the game online at https://play.unity.com/mg/other/project1-6-1.
 
 Audio sources:
 -  https://stock.adobe.com/search/audio?k=452605839
